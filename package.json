@@ -1,7 +1,7 @@
 {
-  "name": "orclapex-js",
+  "name": "confirm-Dialog",
   "version": "0.1.0",
-  "description": "TypeScript Declaration for Oracle Application Express JavaScript API",
+  "description": "Type definitions for jquery-confirm v3.3.0",
   "main": "",
   "types": "./types/orclapex-js",
   "author": "Adrian Png <adrian.png@fuzziebrain.com",
