@@ -1,6 +1,6 @@
 // Type definitions for jquery-confirm v3.3.0 https://craftpip.github.io/jquery-confirm/
-// Project: https://github.com/IonicaBizau/node-abs
-// Definitions by: Alli Pierre Yotti <https://github.com/AyaMorisawa>
+// Project: https://github.com/allipierre/Type-definitions-for-jquery-confirm/tree/master/types/confirmDialog-js
+// Definitions by: Alli Pierre Yotti https://github.com/allipierre
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 declare namespace $ {
