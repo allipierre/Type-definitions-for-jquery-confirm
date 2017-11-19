@@ -64,7 +64,7 @@ class Confirm implements server.Iperson {
                     action: function() {
                         let name = this.$content.find('.name').val();
                         if (!name) {
-                            $.alert('provide a valid name');
+                          a  $.alert('provide a valid name');
                             return false;
                         }
                         $.alert('Your name is ' + name);
