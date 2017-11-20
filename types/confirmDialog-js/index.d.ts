@@ -3,7 +3,48 @@
 // Definitions by: Alli Pierre Yotti https://github.com/allipierre
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-declare namespace $ {
+interface JQueryStatic {
+  /**
+   * confirm Dialog
+   * @param {confirmOptions} pOtions
+   */
+   confirm( pOtions: options.confirmOptions): boolean | void;
+
+  /**
+   * confirm alert
+   * @param {any} pMessage
+   */
+   alert( pMessage?: any):  void;
+
+  /**
+   * confirm Dialog
+   * @param {any} pMessage
+   */
+   dialog( pOtions: options.confirmOptions):  void;
+}
+
+
+interface JQuery {
+  /**
+   * confirm Dialog
+   * @param {confirmOptions} pOtions
+   */
+   confirm( pOtions: options.confirmOptions): boolean | void;
+
+  /**
+   * confirm alert
+   * @param {any} pMessage
+   */
+   alert( pMessage?: any):  void;
+
+  /**
+   * confirm Dialog
+   * @param {any} pMessage
+   */
+   dialog( pOtions: options.confirmOptions):  void;
+}
+
+declare namespace options {
 
     interface confirmOptions {
             buttons? : buttonOptionss | any,
@@ -16,25 +57,5 @@ declare namespace $ {
             cancel? : Function,
             confirm? : Function
     }
-
-    /**
-     * confirm Dialog
-     * @param {confirmOptions} pOtions
-     */
-    function confirm( pOtions: confirmOptions): boolean | void;
-
-    /**
-     * confirm alert
-     * @param {any} pMessage
-     */
-    function alert( pMessage: any):  void;
-
-    /**
-     * confirm Dialog
-     * @param {any} pMessage
-     */
-    function dialog( pOtions: confirmOptions):  void;
-
-
 
 }

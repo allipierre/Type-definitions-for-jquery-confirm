@@ -1,3 +1,4 @@
+/// <reference types="jquery"/>
 /// <reference path="index.d.ts" />
 namespace server {
     export interface Iperson {
@@ -25,8 +26,8 @@ class Confirm implements server.Iperson {
                 confirm: function() {
                     $.alert('Confirmed!');
                 },
-                cancel: function( cancel:string) {
-                    $.alert('Canceled! '+cancel);
+                cancel: function(cancel: string) {
+                    $.alert('Canceled! ' + cancel);
                 },
                 somethingElse: {
                     text: 'Something else',
@@ -90,7 +91,20 @@ class Confirm implements server.Iperson {
     public dialog() {
         $.dialog({
             title: 'Text content!',
-            content: 'Simple modal!',
+            content: 'Simple modal!'
+        });
+    }
+    public confirm_2() {
+        $('.atwitter').val();
+        $('a.twitter').confirm({
+            content: "...",
+        });
+        $('a.twitter').confirm({
+            buttons: {
+                hey: function() {
+                    location.href = this.$target.attr('href');
+                }
+            }
         });
     }
 
