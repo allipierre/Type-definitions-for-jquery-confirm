@@ -96,6 +96,7 @@ class Confirm implements server.Iperson {
     }
     public confirm_2() {
         $('.atwitter').val();
+        $('.atwitter').text();
         $('a.twitter').confirm({
             content: "...",
         });
@@ -106,6 +107,19 @@ class Confirm implements server.Iperson {
                 }
             }
         });
+    }
+
+    public confirm_3(){
+      $.alert('Content here', 'Title here');
+      $.confirm('A message', 'Title is optional');
+      $.dialog('Just to let you know');
+    }
+
+    public confirm_4(){
+      var a = $.confirm({
+        lazyOpen: true,
+        });
+        
     }
 
 }

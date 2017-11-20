@@ -8,19 +8,19 @@ interface JQueryStatic {
    * confirm Dialog
    * @param {confirmOptions} pOtions
    */
-   confirm( pOtions: options.confirmOptions): boolean | void;
+   confirm( pOtions: options.confirmOptions | string, title?:string): boolean | void | HTMLElement;
 
   /**
    * confirm alert
    * @param {any} pMessage
    */
-   alert( pMessage?: any):  void;
+   alert( pMessage?: any | string, title?:string):  void;
 
   /**
    * confirm Dialog
    * @param {any} pMessage
    */
-   dialog( pOtions: options.confirmOptions):  void;
+   dialog( pOtions: options.confirmOptions | string):  void;
 }
 
 
@@ -29,19 +29,19 @@ interface JQuery {
    * confirm Dialog
    * @param {confirmOptions} pOtions
    */
-   confirm( pOtions: options.confirmOptions): boolean | void;
+   confirm( pOtions: options.confirmOptions | string, title?:string): boolean | void | HTMLElement;
 
   /**
    * confirm alert
    * @param {any} pMessage
    */
-   alert( pMessage?: any):  void;
+   alert( pMessage?: any, title?:string):  void;
 
   /**
    * confirm Dialog
    * @param {any} pMessage
    */
-   dialog( pOtions: options.confirmOptions):  void;
+   dialog( pOtions: options.confirmOptions | any):  void;
 }
 
 declare namespace options {
@@ -50,7 +50,8 @@ declare namespace options {
             buttons? : buttonOptionss | any,
             title? : string,
             content?  : string,
-            onContentReady?:Function
+            onContentReady?:Function,
+            lazyOpen?:boolean
     }
 
     interface buttonOptionss {
